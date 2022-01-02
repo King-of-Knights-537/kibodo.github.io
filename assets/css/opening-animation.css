@@ -82,8 +82,11 @@
 }
 
 @media only screen and (max-width:990px){
+  .textwrapper{
+    position: absolute; top:25%;
+  }
   .textwrapper span{
-    display: block;
+    display: block; 
   }
   .txt {
     font-family: "Roboto"; font-size: 40px;
