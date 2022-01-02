@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:700,900");
+
+.loader{
+  position: fixed; background: radial-gradient(#3C3C3C, #000);
+  width:100%; height:100vh; overflow: hidden;
+}
+
+.textwrapper{
+  position: absolute; top:40%;
+  width: 100%; text-align: center;
+}
+
+.txt {
+  font-family: "Roboto";
+  font-size: 90px;
+  font-weight: 700;
+  animation: openingAnimation 3.5s forwards;
+  outline: none;
+  white-space: nowrap; 
+}
+
+@keyframes openingAnimation{
+  0% {
+    text-shadow: 0px 0px transparent, 1px 1px #5B5B5B, 2px 2px #5B5B5B, 3px 3px #5B5B5B, 
+                 4px 4px #5B5B5B, 5px 5px #5B5B5B, 6px 6px #5B5B5B, 7px 7px #5B5B5B, 8px 8px #5B5B5B, 
+                 9px 9px #5B5B5B, 10px 10px #5B5B5B, 11px 11px #5B5B5B, 12px 12px #5B5B5B, 13px 13px #5B5B5B, 
+                 14px 14px #5B5B5B, 15px 15px #5B5B5B, 16px 16px #5B5B5B, 17px 17px #5B5B5B, 18px 18px #5B5B5B, 
+                 19px 19px #5B5B5B, 20px 20px #5B5B5B, 21px 21px #5B5B5B, 22px 22px #5B5B5B, 23px 23px #5B5B5B, 
+                 24px 24px #5B5B5B, 25px 25px #5B5B5B, 26px 26px #5B5B5B, 27px 27px #5B5B5B, 28px 28px #5B5B5B, 
+                 29px 29px #5B5B5B, 30px 30px #5B5B5B, 31px 31px #5B5B5B, 32px 32px #5B5B5B, 33px 33px #5B5B5B, 
+                 34px 34px #5B5B5B, 35px 35px #5B5B5B, 36px 36px #5B5B5B, 37px 37px #5B5B5B, 38px 38px #5B5B5B, 
+                 39px 39px #5B5B5B, 40px 40px #5B5B5B, 41px 41px #5B5B5B, 42px 42px #5B5B5B, 43px 43px #5B5B5B, 
+                 44px 44px #5B5B5B, 45px 45px #5B5B5B, 46px 46px #5B5B5B, 47px 47px #5B5B5B, 48px 48px #5B5B5B, 
+                 49px 49px #5B5B5B, 50px 50px #5B5B5B, 51px 51px #5B5B5B, 52px 52px #5B5B5B, 53px 53px #5B5B5B, 
+                 54px 54px #5B5B5B, 55px 55px #5B5B5B, 56px 56px #5B5B5B, 57px 57px #5B5B5B, 58px 58px #5B5B5B, 
+                 59px 59px #5B5B5B, 60px 60px #5B5B5B, 61px 61px #5B5B5B, 62px 62px #5B5B5B, 63px 63px #5B5B5B, 
+                 64px 64px #5B5B5B, 65px 65px #5B5B5B, 66px 66px #5B5B5B, 67px 67px #5B5B5B, 68px 68px #5B5B5B, 
+                 69px 69px #5B5B5B, 70px 70px #5B5B5B, 71px 71px #5B5B5B, 72px 72px #5B5B5B, 73px 73px #5B5B5B, 
+                 74px 74px #5B5B5B, 75px 75px #5B5B5B, 76px 76px #5B5B5B, 77px 77px #5B5B5B, 78px 78px #5B5B5B, 
+                 79px 79px #5B5B5B, 80px 80px #5B5B5B, 81px 81px #5B5B5B, 82px 82px #5B5B5B, 83px 83px #5B5B5B, 
+                 84px 84px #5B5B5B, 85px 85px #5B5B5B, 86px 86px #5B5B5B, 87px 87px #5B5B5B, 88px 88px #5B5B5B, 
+                 89px 89px #5B5B5B, 90px 90px #5B5B5B, 91px 91px #5B5B5B, 92px 92px #5B5B5B, 93px 93px #5B5B5B, 
+                 94px 94px 	#5B5B5B, 95px 95px #5B5B5B, 96px 96px #5B5B5B, 97px 97px #5B5B5B, 98px 98px #5B5B5B, 
+                 99px 99px #5B5B5B, 100px 100px #5B5B5B;
+    color: #BEBEBE;
+    transform: scale(1.5, 1.5);
+  }
+  10% {
+    text-shadow: 0px 0px transparent, 1px 1.5px #5B5B5B, 2px 3px #5B5B5B, 3px 4.5px #5B5B5B, 4px 6px #5B5B5B, 5px 7.5px #5B5B5B, 
+                 6px 9px #5B5B5B, 7px 10.5px #5B5B5B, 8px 12px #5B5B5B, 9px 13.5px #5B5B5B, 10px 15px #5B5B5B, 11px 16.5px #5B5B5B, 
+                 12px 18px #5B5B5B, 13px 19.5px #5B5B5B, 14px 21px #5B5B5B, 15px 22.5px #5B5B5B, 16px 24px #5B5B5B, 17px 25.5px #5B5B5B, 
+                 18px 27px #5B5B5B, 19px 28.5px #5B5B5B, 20px 30px #5B5B5B, 21px 31.5px #5B5B5B, 22px 33px #5B5B5B, 23px 34.5px #5B5B5B, 
+                 24px 36px #5B5B5B, 25px 37.5px #5B5B5B, 26px 39px #5B5B5B, 27px 40.5px #5B5B5B, 28px 42px #5B5B5B, 29px 43.5px #5B5B5B, 
+                 30px 45px #5B5B5B, 31px 46.5px #5B5B5B, 32px 48px #5B5B5B, 33px 49.5px #5B5B5B, 34px 51px #5B5B5B, 35px 52.5px #5B5B5B, 
+                 36px 54px #5B5B5B, 37px 55.5px #5B5B5B, 38px 57px #5B5B5B, 39px 58.5px #5B5B5B, 40px 60px #5B5B5B, 41px 61.5px #5B5B5B, 
+                 42px 63px #5B5B5B, 43px 64.5px #5B5B5B, 44px 66px #5B5B5B, 45px 67.5px #5B5B5B, 46px 69px #5B5B5B, 47px 70.5px #5B5B5B, 
+                 48px 72px #5B5B5B, 49px 73.5px #5B5B5B, 50px 75px #5B5B5B, 51px 76.5px #5B5B5B, 52px 78px #5B5B5B, 53px 79.5px #5B5B5B, 
+                 54px 81px #5B5B5B, 55px 82.5px #5B5B5B, 56px 84px #5B5B5B, 57px 85.5px #5B5B5B, 58px 87px #5B5B5B, 59px 88.5px #5B5B5B, 
+                 60px 90px #5B5B5B, 61px 91.5px #5B5B5B, 62px 93px #5B5B5B, 63px 94.5px #5B5B5B, 64px 96px #5B5B5B, 65px 97.5px #5B5B5B, 
+                 66px 99px #5B5B5B, 67px 100.5px #5B5B5B, 68px 102px #5B5B5B, 69px 103.5px #5B5B5B, 70px 105px #5B5B5B, 71px 106.5px #5B5B5B, 
+                 72px 108px #5B5B5B, 73px 109.5px #5B5B5B, 74px 111px #5B5B5B, 75px 112.5px #5B5B5B, 76px 114px #5B5B5B, 77px 115.5px #5B5B5B, 
+                 78px 117px #5B5B5B, 79px 118.5px #5B5B5B, 80px 120px #5B5B5B, 81px 121.5px #5B5B5B, 82px 123px #5B5B5B, 83px 124.5px #5B5B5B, 
+                 84px 126px #5B5B5B, 85px 127.5px #5B5B5B, 86px 129px #5B5B5B, 87px 130.5px #5B5B5B, 88px 132px #5B5B5B, 89px 133.5px #5B5B5B, 
+                 90px 135px #5B5B5B, 91px 136.5px #5B5B5B, 92px 138px #5B5B5B, 93px 139.5px #5B5B5B, 94px 141px #5B5B5B, 95px 142.5px #5B5B5B, 
+                 96px 144px #5B5B5B, 97px 145.5px #5B5B5B, 98px 147px #5B5B5B, 99px 148.5px #5B5B5B, 100px 150px #5B5B5B;
+    color: #BEBEBE;
+    transform: scale(1.5, 1.5);
+  }
+  20%{
+    color: #E0E0E0;
+    text-shadow: none;
+  }
+  60% {
+    color: #E0E0E0;
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    opacity: 1;
+    color: #FFFFFF;
+    transform: scale(0.85, 0.85);
+  }
+}
