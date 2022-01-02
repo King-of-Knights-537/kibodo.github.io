@@ -47,15 +47,27 @@ p, span, li, a{
 .navbar-light .navbar-nav .nav-link:focus{
     color: white !important;
 }
-.navbar-light .navbar-nav li::after{
-    content: "";
-    position: relative; display: block;
+.navbar-light .navbar-nav .normal::after{
+    content: ""; position: relative; display: block;
     height: 0.2em; width: 0%;
     background-color: var(--orangered);
-    bottom: 0.1em; transition: 0.5s ease all;
+    bottom: -0.5em; transition: 0.5s ease all;
 }
-.navbar-light .navbar-nav li:hover::after{
+.navbar-light .navbar-nav .normal:hover::after{
     width: 100%; 
+}
+
+.navbar-light .navbar-nav .active a{
+    color: #ff5719 !important; text-decoration: none;
+}
+.navbar-light .navbar-nav .active a:hover,
+.navbar-light .navbar-nav .active a:focus{
+    color: #ff5719 !important;
+}
+.navbar-light .navbar-nav .active a::after{
+    content: ""; position: relative; display: block;
+    height: 0.2em; width: 100% !important;
+    background-color: var(--orangered); bottom: -0.5em;
 }
 
 .arrow{
