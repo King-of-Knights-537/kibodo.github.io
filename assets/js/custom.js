@@ -21,9 +21,9 @@ document.addEventListener("DOMContentLoaded",function(){
             autoAlpha: 0,
             ease: Power1.easeInOut
 
-        },'+=5')
+        },'+=4')
 
-    .fromTo('main',1,{
+        .fromTo('main',1,{
 
             autoAlpha: 0,
 
@@ -32,21 +32,21 @@ document.addEventListener("DOMContentLoaded",function(){
             autoAlpha: 1,
             ease: Power1.easeInOut
 
-        },'-=0.25')   
+        })   
 
     //Opening Animation
 
-    .fromTo(".arrow",1,{ 
+        .fromTo(".arrow",1,{ 
 
-        autoAlpha: 0,
-      
-    },{ 
+            autoAlpha: 0,
+        
+        },{ 
 
-        autoAlpha: 1,
-        ease: Power1.easeInOut
-      
-    },'+=0.3')    
-    ;
+            autoAlpha: 1,
+            ease: Power1.easeInOut
+        
+        },'+=0.3')    
+        ;
 
 });
 
@@ -76,6 +76,7 @@ new fullpage('#fullpage', {
 
 //Click-And-Fade-In Animation
 $('.fadeIn').on('click', function() {
+
     var loading3 = new TimelineMax();
     loading3.fromTo('.fadedContent',1,{ 
 
@@ -87,5 +88,17 @@ $('.fadeIn').on('click', function() {
         ease: Power1.easeInOut
 
     },'+=0.5')
+
+    .fromTo('.wrapper .logo',1,{ 
+
+        autoAlpha: 0
+
+    },{
+
+        autoAlpha: 1,
+        ease: Power1.easeInOut
+
+    },'+=1')
     ;
+
 });

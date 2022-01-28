@@ -1,0 +1,239 @@
+@font-face {
+    font-family: 'Gotham Medium';
+    src: url('Gotham-Medium.woff2') format('woff2'),
+        url('Gotham-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gotham Book';
+    src: url('Gotham-Book.woff2') format('woff2'),
+        url('Gotham-Book.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jaquel';
+    src: url('Jaquel-HeavyItalic.eot');
+    src: url('Jaquel-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+        url('Jaquel-HeavyItalic.woff2') format('woff2'),
+        url('Jaquel-HeavyItalic.woff') format('woff'),
+        url('Jaquel-HeavyItalic.ttf') format('truetype'),
+        url('Jaquel-HeavyItalic.svg#Jaquel-HeavyItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Jaquel';
+    src: url('Jaquel-Regular.eot');
+    src: url('Jaquel-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Jaquel-Regular.woff2') format('woff2'),
+        url('Jaquel-Regular.woff') format('woff'),
+        url('Jaquel-Regular.ttf') format('truetype'),
+        url('Jaquel-Regular.svg#Jaquel-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Jaquel';
+    src: url('Jaquel-BoldItalic.eot');
+    src: url('Jaquel-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Jaquel-BoldItalic.woff2') format('woff2'),
+        url('Jaquel-BoldItalic.woff') format('woff'),
+        url('Jaquel-BoldItalic.ttf') format('truetype'),
+        url('Jaquel-BoldItalic.svg#Jaquel-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Jaquel';
+    src: url('Jaquel-Light.eot');
+    src: url('Jaquel-Light.eot?#iefix') format('embedded-opentype'),
+        url('Jaquel-Light.woff2') format('woff2'),
+        url('Jaquel-Light.woff') format('woff'),
+        url('Jaquel-Light.ttf') format('truetype'),
+        url('Jaquel-Light.svg#Jaquel-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Jaquel';
+    src: url('Jaquel-Heavy.eot');
+    src: url('Jaquel-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('Jaquel-Heavy.woff2') format('woff2'),
+        url('Jaquel-Heavy.woff') format('woff'),
+        url('Jaquel-Heavy.ttf') format('truetype'),
+        url('Jaquel-Heavy.svg#Jaquel-Heavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Jaquel';
+    src: url('Jaquel-Italic.eot');
+    src: url('Jaquel-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Jaquel-Italic.woff2') format('woff2'),
+        url('Jaquel-Italic.woff') format('woff'),
+        url('Jaquel-Italic.ttf') format('truetype'),
+        url('Jaquel-Italic.svg#Jaquel-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Jaquel';
+    src: url('Jaquel-LightItalic.eot');
+    src: url('Jaquel-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Jaquel-LightItalic.woff2') format('woff2'),
+        url('Jaquel-LightItalic.woff') format('woff'),
+        url('Jaquel-LightItalic.ttf') format('truetype'),
+        url('Jaquel-LightItalic.svg#Jaquel-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Jaquel';
+    src: url('Jaquel-Bold.eot');
+    src: url('Jaquel-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Jaquel-Bold.woff2') format('woff2'),
+        url('Jaquel-Bold.woff') format('woff'),
+        url('Jaquel-Bold.ttf') format('truetype'),
+        url('Jaquel-Bold.svg#Jaquel-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+:root {
+    --orangered: #ff5719;
+}
+
+body{
+    background-color: #191919; text-transform: uppercase;
+}
+
+.container{
+    max-width: 100%; 
+}
+div{
+    display: inline-block;
+}
+div.right-hand{
+    margin-top: 15em;
+    position: relative; right: 4.7em;
+}
+.col-md-5{
+    width: 35%;
+}
+.col-md-6{
+    width: 45%;
+}
+
+.title{
+    margin-top: 5em;
+}
+
+h1{
+    font-family: 'Jaquel'; font-weight: 900;
+    font-style: normal; font-size: 80px; 
+    color: white; letter-spacing: 10px;
+}
+h2{
+    font-family: 'Jaquel'; font-weight: 900;
+    font-style: normal; font-size: 40px; 
+    color: white; letter-spacing: 2px;
+}
+p{
+    font-family: 'Gotham Book'; font-weight: 500;
+    font-style: normal; font-size: 25px;
+    color: #9d9d9d; letter-spacing: 4px;
+}
+p.subtitle{
+    margin-top: 0.8em;
+}
+div.right-hand>p.subtitle{
+    position: relative; right: 0.5em;
+}
+div.introduction{
+    position: absolute; left: 0; right: 8%;
+    margin-left: auto; margin-right: auto;
+    bottom: 12%;
+}
+div.introduction>p{
+    color: white;
+}
+
+img{
+    cursor: pointer;
+}
+.section{
+    width: 100%; height: 100vh; position: relative;
+    background-size: cover; background-position: center;
+}
+.logo{
+    width: 150px; position: absolute;
+    top: 35px; left: 60px;
+}
+
+.navbar-light .navbar-nav .nav-item{
+    margin-right: 4em; margin-top: 2.5em;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: white; text-align: center;
+    text-transform: uppercase; 
+    font-size: 20px; letter-spacing: 5px;
+    font-family: 'Jaquel'; font-weight: normal;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: 	#D0D0D0 !important;
+}
+.navbar-light .navbar-nav .nav-link:focus{
+    color: white !important;
+}
+.navbar-light .navbar-nav .normal::after{
+    content: ""; position: relative; display: block;
+    height: 0.2em; width: 0%;
+    background-color: var(--orangered);
+    bottom: -0.5em; transition: 0.5s ease all;
+}
+.navbar-light .navbar-nav .normal:hover::after{
+    width: 100%; 
+}
+
+.navbar-light .navbar-nav .active a{
+    color: #ff5719 !important; text-decoration: none;
+}
+.navbar-light .navbar-nav .active a:hover,
+.navbar-light .navbar-nav .active a:focus{
+    color: #ff5719 !important;
+}
+.navbar-light .navbar-nav .active a::after{
+    content: ""; position: relative; display: block;
+    height: 0.2em; width: 100% !important;
+    background-color: var(--orangered); 
+    bottom: -0.5em; left: -0.1em
+}
+
+.arrow{
+    position: relative; 
+    top: 1.7em !important; right: 0.5em !important;
+    z-index: 20; width: 40px; cursor: pointer;
+    animation:loop 2s infinite;
+    -webkit-animation:loop 2s infinite;
+    -moz-animation:loop 2s infinite;
+}
+@keyframes loop{
+    0%{
+        transform: translate(0px, 0px);
+    }
+    50%{
+        transform: translate(0px, 20px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
+
+@media only screen and (max-height:510px) and (orientation: landscape){
+
+}
