@@ -1,24 +1,22 @@
 .three-dimensional-images-area{
-    position: absolute; right: 17%; top:22%;
-    transform: translate(-50%,-50%);
+    position: absolute; right: 31.5%; top:22%;
     width: 480px; perspective: 2500px;
 }
 .three-dimensional-images-area>.images{
     width: 100%; transform-style: preserve-3d;
     animation: roll 20s infinite linear;
+    -webkit-animation: roll 20s infinite linear;
+    -moz-animation: roll 20s infinite linear;
 }
 .three-dimensional-images-area>.images:hover{
     animation-play-state: paused;
 }
 .three-dimensional-images-area>.images>div{
     width: 100%; position: absolute; float:right;
-    transform:rotateY(calc(40deg * var(--img) - 40deg)) translateZ(650px);
+    transform:rotateY(calc(40deg * var(--img) - 40deg)) translateZ(600px);
 }
 .three-dimensional-images-area>.images>div>img{
     width: 65%; transition: 0.5s linear;
-}
-.three-dimensional-images-area>.images>div>img:hover{
-    transform: scale(1.25);
 }
 @keyframes roll{
     0%{

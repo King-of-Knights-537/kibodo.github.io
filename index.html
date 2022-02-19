@@ -1,5 +1,7 @@
-<!doctype html>
+<!Doctype html>
+
 <html lang="en">
+
   <head>
     <!-- Required meta tags -->
     <meta charset="UTF-8">
@@ -51,7 +53,7 @@
 
     <link rel="stylesheet" href="./assets/css/wave-animation.css">
 
-    <!--jQuery-->
+    <!--JS / jQuery-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -72,6 +74,10 @@
 
     <style>
 
+      span.right-hand{
+        position: relative; top: 1.85em; right: 1.68em;
+      }
+
       #slide1{
         background-image: url('./image/bg1.jpg');
       }
@@ -85,118 +91,149 @@
         background-color: #1c1c1c;
       }
 
+      #slide1 .title{
+        margin-top: 6.5em; width: 28%;
+        position: relative; top: -4em;
+      }
+
+      #slide1 .title-2{
+        margin-top: 15em; position: relative; 
+        width: 52.5%;
+      }
+
+      #slide2 .arrow-in-cicle{
+        position: absolute; bottom: 18%; left: 4.25em;
+        z-index: 2; width: 30px; cursor: pointer;
+        animation: loop 2s infinite;
+        -webkit-animation: loop 2s infinite;
+        -moz-animation: loop 2s infinite;
+      }
+
+      #slide3 .topic{
+        position: relative; right: 10%;
+        margin-top: 1.3em; float: right;
+        width: 30%;
+      }
+
     </style>
 
   </head>
+
   <body>
 
     <div class="loader">
 
       <div class="textwrapper">
 
-        <h1 class="txt">Welcome to <span class="txt brand">Kibodo</span></h1>
+        <h2 class="txt">Welcome to <span class="txt brand">Kibodo</span></h2>
   
       </div>
   
     </div>
   
-    <main>
+    <main class="opening-animation">
 
-      <input type="checkbox" id="active">
-      <label for="active" class="menu-btn fadeIn"><i class="fas fa-bars"></i></label>
+      <header>
 
-      <div class="wrapper">
+        <input type="checkbox" id="active">
 
-        <a href="index.html">
-          <img class="logo" src="image/logo/logo.png" alt="logo of kibodo">
-        </a>
+        <label for="active" class="menu-btn fadeIn"><i class="fas fa-bars"></i></label>
 
-        <ul class="fadedContent">
+        <div class="wrapper">
 
-          <li><a class="active" href="#">Home</a></li>
-          <li><a href="#">Introduction</a></li>
-          <li><a href="#">Category</a></li>
-          <li><a href="#">Contact</a></li>
+          <ul class="fadedContent">
 
-        </ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="introduction.html">Introduction</a></li>
+            <li><a href="#">Category</a></li>
+            <li><a href="#">Contact</a></li>
 
-      </div>
-      
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+          </ul>
 
-        <div class="container-fluid">
-  
-          <div class="collapse navbar-collapse" id="navbarNav">
+        </div>
+        
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+
+          <div class="container-fluid">
 
             <a href="index.html">
               <img class='logo' src='./image/logo/logo.png' alt="logo of kibodo">
             </a>
+    
+            <div class="collapse navbar-collapse" id="navbarNav">
 
-            <ul class="navbar-nav mx-auto">
-              
-              <li class="nav-item active">
-                <a class="nav-link active" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link normal" href="#">Introduction</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link normal" href="#">Category</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link normal" href="#">Contact</a>
-              </li>
+              <ul class="navbar-nav mx-auto">
+                
+                <li class="nav-item active">
+                  <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link normal" href="introduction.html">Introduction</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link normal" href="category.html">Category</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link normal" href="contact.html">Contact</a>
+                </li>
 
-            </ul>
-  
+              </ul>
+    
+            </div>
+
           </div>
 
-        </div>
+        </nav>
 
-      </nav>
+      </header>
   
       <div id="fullpage">
         
         <section class='section' id='slide1'>
 
-          <div class="container"> 
+          <div class="text-start offset-md-1 title">
 
-            <div class="row">
+            <h2>
+              Customizable. <br>
+              majestic.<br>
+              revolutionize.
+            </h2>
 
-              <div class="col-md-5 text-start offset-md-1 title">
+            <p class="subtitle">
+              To Explore mORE nEW knowledge & Experience About Custom mechanical keyboarDS
+            </p>
 
-                <h2>
-                  Customizable. <br>
-                  majestic.<br>
-                  revolutionize.
-                </h2>
-  
-                <p class="subtitle">
-                  To Explore mORE nEW knowledge & Experience About Custom mechanical keyboarDS
-                </p>
-  
-              </div>
-  
-              <div class="col-md-6 text-end title right-hand">
-  
-                <h1>
-                  Kibodo
-                </h1>
-  
-                <p class="subtitle">
-                  A Heaven for every <br> 
-                  <span><img src="./image/effect/white_arrow.png" class="arrow" alt="Arrow"></span> Keyboard Users
-                </p>
-  
-              </div>
+          </div>
 
-            </div>
+          <div class="text-end right-hand title-2">
+
+            <h1>
+              Kibodo
+            </h1>
+
+            <p class="subtitle right-hand">
+              A Heaven for every <br> 
+              <span><img src="./image/effect/white_arrow.png" class="arrow arrow-with-animation-1" alt="Arrow"></span>
+              Keyboard Users
+            </p>
 
           </div>
           
         </section>
   
         <section class='section' id='slide2'>
+
+          <img src="./image/effect/white_arrow.png" class="arrow-in-cicle" alt="Arrow">
+
+          <div class="circle">
+
+            <div class="title">
+
+              <h2>About <br> Kibodo</h2>
+
+            </div>
+
+          </div>
 
           <div class="three-dimensional-images-area">
 
@@ -224,31 +261,69 @@
             
           </div>
 
-          <div class="container">
+          <div class="introduction text-start">
 
-            <div class="row">
+            <p>We are a experienced Team of keyboard builder in Hong Kong. We will provide you classic mechanical-keyboard-related services, such as assembling customized keyboard, Self-building tutorials, proxying of keyboards and related components. </p>
 
-              <div class="introduction col-md-6 text-start">
-
-                <p>We are a experienced Team of keyboard builder in Hong Kong. We will provide you classic mechanical-keyboard-related services, such as assembling customized keyboard, Self-building tutorials, proxying of keyboards and related components. </p>
-    
-              </div>
-
-            </div>
-            
           </div>
 
         </section>
   
         <section class='section' id='slide3'>
 
-          <div class="wave"></div>
+          <div class="left-keyboard">
+
+            <img class="keyboard" src="./image/keyboards/building_keyboard_4.png" alt="Reference of Kibodo Keyboard">
+
+          </div>
+
+          <div class="topic text-end">
+
+            <h2>What is Custom mechanical keyboarD? </h2>
+
+            <div class="introduction-2 text-start">
+
+              <p class="subtitle">a type of physical keyboard, that is built with a series of customized size, switches, keys, and Even overall functionality.</p>
+            
+              <p class="subtitle">By Now, IT has become a wonderful outlet for people to express their own style.</p>
+
+              <img src="./image/effect/white_arrow.png" class="arrow" alt="Arrow">
+
+            </div>
+            
+          </div>
           
         </section>
 
         <section class='section' id='slide4'>
 
-          <div class="wave"></div>
+          <div class="outside-of-wave">
+
+            <div class="circle-2">
+
+              <div class="title">
+  
+                <h2>Why is Custom <br> mechanical <br> keyboarD?</h2>
+  
+              </div>
+  
+            </div>
+
+          </div>
+
+          <div class="wave">
+
+            <img src="./assets/css/wave.svg" alt="Wave-Image">
+
+          </div>
+
+          <footer>
+
+            <h2 class="left-copyright">
+              ©2022 Kibodo
+            </h2>
+
+          </footer>
           
         </section>
 
@@ -259,7 +334,8 @@
     <!-- External JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
-    <script src='./assets/js/custom.js'></script>
+    <script src='./assets/js/app.js'></script>
 
   </body>
+
 </html>

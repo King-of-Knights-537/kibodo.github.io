@@ -1,0 +1,239 @@
+<!Doctype html>
+
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 
+    <meta name="description" content="">
+
+    <meta name="keywords" content="">
+
+    <meta property="og:type" content="article" />
+
+    <meta property="og:title" content="" />
+
+    <meta property="og:url" content="" />
+
+    <meta property="og:description" content="" />
+
+    <meta property="og:image" content=""/>
+
+    <meta name="twitter:card" content="summary" />
+
+    <meta name="twitter:title" content="" />
+
+    <meta name="twitter:description" content="" />
+
+    <meta name="twitter:image" content="/img/cover.png" />
+
+    <meta name="robots" content="noindex,nofollow">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="canonical" href="" />
+
+    <!-- Bootstrap / CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    
+    <link href='./assets/css/main.css' rel='stylesheet'>
+    
+    <link href='./assets/css/fullpage.css' rel='stylesheet'>
+    
+    <link href='./assets/css/fullscreen-overlay-navigation-menu.css' rel='stylesheet'>
+    
+    <link rel="stylesheet" href="./assets/css/three-dimensional-images-animation.css">
+
+    <link rel="stylesheet" href="./assets/css/wave-animation.css">
+
+    <!--JS / jQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="./assets/js/fullpage.js"></script>
+
+    <!--GSAP-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/4188a81d98.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    
+    <title>KIBODO - Category - A Heaven For Every Keyboard Users</title>
+
+    <style>
+
+      #slide1{
+        filter: invert(96%);
+      }
+      #slide2{
+        background-color: #1c1c1c;
+      }
+      #slide3{
+        background-color: #1c1c1c;
+      }
+      #slide4{
+        background-color: #1c1c1c;
+      }
+
+      #slide1 video{
+        filter: invert(1);  
+      }
+      #slide1 .mask{
+        position: absolute; top: 0; left: 0;
+        width: 100%; height: 100vh; z-index: 2;
+        user-select: none; mix-blend-mode: screen;
+        background-size: cover; cursor: auto;
+      }
+      #slide1 .arrow{
+        filter: invert(1); position: relative; 
+        top: -0.28em; width: 50px; margin-left: 12px;
+      }
+      #slide1 h1{
+        position: relative; z-index: 3; filter: invert(0);
+        letter-spacing: 1.5px; text-align: center;
+        font-size: 90px; color: #000 !important;
+      }
+
+      #slide4 footer{
+        position: absolute; width: 100%; 
+        height: 143px; bottom: 0;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+  
+    <main>
+
+      <header>
+        
+        <input type="checkbox" id="active">
+      
+        <label for="active" class="menu-btn fadeIn"><i class="fas fa-bars"></i></label>
+
+        <div class="wrapper">
+
+          <ul class="fadedContent">
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="introduction.html">Introduction</a></li>
+            <li><a class="active" href="#">Category</a></li>
+            <li><a href="#">Contact</a></li>
+
+          </ul>
+
+        </div>
+        
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+
+          <div class="container-fluid">
+
+            <a href="index.html">
+              <img class='logo' src='./image/logo/logo.png' alt="logo of kibodo">
+            </a>
+    
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+              <ul class="navbar-nav mx-auto">
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link normal" href="introduction.html">Introduction</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link active" href="#">Category</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link normal" href="contact.html">Contact</a>
+                </li>
+
+              </ul>
+    
+            </div>
+
+          </div>
+
+        </nav>
+
+      </header>
+  
+      <div id="fullpage">
+        
+        <section class='section' id='slide1'>
+
+          <div class="video-container">
+
+            <video src="./assets/video/typing_animation_background_colors.mp4" autoplay loop muted></video>
+
+            <img src="./image/effect/mask.jpg" alt="Mask-Effect" class="mask">
+
+          </div> 
+
+          <h1 class="title-5">
+            Kibodo's artworks
+            <span><img src="./image/effect/white_arrow.png" class="arrow arrow-with-animation-3" alt="Arrow"></span>
+          </h1>
+          
+        </section>
+  
+        <section class='section' id='slide2'>
+
+          <div class="circular-banner">
+            <h2>Our Custom <br> mechanical keyboarD</h2>
+            <img src="./image/effect/cicrular-text.png" alt="Kibodo-Cicrular-Banner">
+          </div>
+
+        </section>
+
+        <section class='section' id='slide3'>
+
+          <div class="circular-banner">
+            <h2>Our Custom <br> stabilizers</h2>
+            <img src="./image/effect/cicrular-text.png" alt="Kibodo-Cicrular-Banner">
+          </div>
+
+        </section>
+  
+        <section class='section' id='slide4'>
+
+          <div class="circular-banner">
+            <h2>Our Custom <br> switches</h2>
+            <img src="./image/effect/cicrular-text.png" alt="Kibodo-Cicrular-Banner">
+          </div>
+
+          <footer>
+
+            <h2 class="left-copyright">
+              ©2022 Kibodo
+            </h2>
+
+          </footer>
+          
+        </section>
+
+      </div>
+
+    </main>
+
+    <!-- External JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <script src='./assets/js/app.js'></script>
+
+  </body>
+
+</html>

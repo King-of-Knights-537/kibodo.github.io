@@ -1,99 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-
 @font-face {
     font-family: 'Jaquel';
-    src: url('Jaquel-HeavyItalic.eot');
-    src: url('Jaquel-HeavyItalic.eot?#iefix') format('embedded-opentype'),
-        url('Jaquel-HeavyItalic.woff2') format('woff2'),
-        url('Jaquel-HeavyItalic.woff') format('woff'),
-        url('Jaquel-HeavyItalic.ttf') format('truetype'),
-        url('Jaquel-HeavyItalic.svg#Jaquel-HeavyItalic') format('svg');
-    font-weight: 900;
-    font-style: italic;
-}
-  
-@font-face {
-    font-family: 'Jaquel';
-    src: url('Jaquel-Regular.eot');
-    src: url('Jaquel-Regular.eot?#iefix') format('embedded-opentype'),
-        url('Jaquel-Regular.woff2') format('woff2'),
-        url('Jaquel-Regular.woff') format('woff'),
-        url('Jaquel-Regular.ttf') format('truetype'),
-        url('Jaquel-Regular.svg#Jaquel-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-  
-@font-face {
-    font-family: 'Jaquel';
-    src: url('Jaquel-BoldItalic.eot');
-    src: url('Jaquel-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('Jaquel-BoldItalic.woff2') format('woff2'),
-        url('Jaquel-BoldItalic.woff') format('woff'),
-        url('Jaquel-BoldItalic.ttf') format('truetype'),
-        url('Jaquel-BoldItalic.svg#Jaquel-BoldItalic') format('svg');
-    font-weight: bold;
-    font-style: italic;
-}
-  
-@font-face {
-    font-family: 'Jaquel';
-    src: url('Jaquel-Light.eot');
-    src: url('Jaquel-Light.eot?#iefix') format('embedded-opentype'),
-        url('Jaquel-Light.woff2') format('woff2'),
-        url('Jaquel-Light.woff') format('woff'),
-        url('Jaquel-Light.ttf') format('truetype'),
-        url('Jaquel-Light.svg#Jaquel-Light') format('svg');
-    font-weight: 300;
-    font-style: normal;
-}
-  
-@font-face {
-    font-family: 'Jaquel';
-    src: url('Jaquel-Heavy.eot');
-    src: url('Jaquel-Heavy.eot?#iefix') format('embedded-opentype'),
-        url('Jaquel-Heavy.woff2') format('woff2'),
-        url('Jaquel-Heavy.woff') format('woff'),
-        url('Jaquel-Heavy.ttf') format('truetype'),
-        url('Jaquel-Heavy.svg#Jaquel-Heavy') format('svg');
-    font-weight: 900;
-    font-style: normal;
-}
-  
-@font-face {
-    font-family: 'Jaquel';
-    src: url('Jaquel-Italic.eot');
-    src: url('Jaquel-Italic.eot?#iefix') format('embedded-opentype'),
-        url('Jaquel-Italic.woff2') format('woff2'),
-        url('Jaquel-Italic.woff') format('woff'),
-        url('Jaquel-Italic.ttf') format('truetype'),
-        url('Jaquel-Italic.svg#Jaquel-Italic') format('svg');
-    font-weight: normal;
-    font-style: italic;
-}
-  
-@font-face {
-    font-family: 'Jaquel';
-    src: url('Jaquel-LightItalic.eot');
-    src: url('Jaquel-LightItalic.eot?#iefix') format('embedded-opentype'),
-        url('Jaquel-LightItalic.woff2') format('woff2'),
-        url('Jaquel-LightItalic.woff') format('woff'),
-        url('Jaquel-LightItalic.ttf') format('truetype'),
-        url('Jaquel-LightItalic.svg#Jaquel-LightItalic') format('svg');
-    font-weight: 300;
-    font-style: italic;
-}
-  
-@font-face {
-    font-family: 'Jaquel';
-    src: url('Jaquel-Bold.eot');
-    src: url('Jaquel-Bold.eot?#iefix') format('embedded-opentype'),
-        url('Jaquel-Bold.woff2') format('woff2'),
-        url('Jaquel-Bold.woff') format('woff'),
-        url('Jaquel-Bold.ttf') format('truetype'),
-        url('Jaquel-Bold.svg#Jaquel-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
+    src: url('Jaquel-Regular.woff2') format('woff2'),
+         url('Jaquel-Regular.woff') format('woff');
+    font-weight: normal; font-style: normal;
 }
 
 :root {
@@ -139,6 +48,9 @@
     top: 6.5px; font-size: 28px;
 }
 
+input[type="checkbox"]{
+    display: none; 
+}
 #active:checked ~ .menu-btn i:before{
     content: "\f00d"; 
     font-size: 35px;
@@ -156,11 +68,11 @@
     margin: 30px 0;
 }
 .wrapper ul li a{
-    color: none; text-decoration: none;
-    font-size: 20px; font-weight: 500;
-    padding: 5px 30px; color: #fff;
-    position: relative; line-height: 50px;
-    display: block; margin: auto;
+    color: none; text-decoration: none; font-size: 20px; 
+    padding: 5px 30px; color: #fff; position: relative; 
+    line-height: 50px; display: block; margin: auto; 
+    font-family: 'Jaquel'; font-weight: normal; 
+    font-style: normal;
 }
 .wrapper ul li a:hover:after{
     transform: scaleY(1);
@@ -187,15 +99,6 @@
     position: absolute; bottom: 0; 
     left: 0; right: 0; margin-left: auto;
     margin-right: auto; transition: 0.5s ease all;
-}
-
-.wrapper .logo{
-    width: 100px; position: absolute;
-    top: 20px; left: 20px;
-}
-
-input[type="checkbox"]{
-    display: none; 
 }
 
 @media only screen and (min-width:680px) and (max-width:990px){

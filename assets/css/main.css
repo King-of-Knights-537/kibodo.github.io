@@ -1,11 +1,4 @@
-@font-face {
-    font-family: 'Gotham Medium';
-    src: url('Gotham-Medium.woff2') format('woff2'),
-        url('Gotham-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
+/* Font-Family : Gotham Book*/
 @font-face {
     font-family: 'Gotham Book';
     src: url('Gotham-Book.woff2') format('woff2'),
@@ -15,180 +8,146 @@
     font-display: swap;
 }
 
+/* Font-Family : Jaquel*/
 @font-face {
     font-family: 'Jaquel';
-    src: url('Jaquel-HeavyItalic.eot');
-    src: url('Jaquel-HeavyItalic.eot?#iefix') format('embedded-opentype'),
-        url('Jaquel-HeavyItalic.woff2') format('woff2'),
-        url('Jaquel-HeavyItalic.woff') format('woff'),
-        url('Jaquel-HeavyItalic.ttf') format('truetype'),
-        url('Jaquel-HeavyItalic.svg#Jaquel-HeavyItalic') format('svg');
-    font-weight: 900;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Jaquel';
-    src: url('Jaquel-Regular.eot');
-    src: url('Jaquel-Regular.eot?#iefix') format('embedded-opentype'),
-        url('Jaquel-Regular.woff2') format('woff2'),
-        url('Jaquel-Regular.woff') format('woff'),
-        url('Jaquel-Regular.ttf') format('truetype'),
-        url('Jaquel-Regular.svg#Jaquel-Regular') format('svg');
+    src: url('Jaquel-Regular.woff2') format('woff2'),
+         url('Jaquel-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Jaquel';
-    src: url('Jaquel-BoldItalic.eot');
-    src: url('Jaquel-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('Jaquel-BoldItalic.woff2') format('woff2'),
-        url('Jaquel-BoldItalic.woff') format('woff'),
-        url('Jaquel-BoldItalic.ttf') format('truetype'),
-        url('Jaquel-BoldItalic.svg#Jaquel-BoldItalic') format('svg');
-    font-weight: bold;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Jaquel';
-    src: url('Jaquel-Light.eot');
-    src: url('Jaquel-Light.eot?#iefix') format('embedded-opentype'),
-        url('Jaquel-Light.woff2') format('woff2'),
-        url('Jaquel-Light.woff') format('woff'),
-        url('Jaquel-Light.ttf') format('truetype'),
-        url('Jaquel-Light.svg#Jaquel-Light') format('svg');
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Jaquel';
-    src: url('Jaquel-Heavy.eot');
-    src: url('Jaquel-Heavy.eot?#iefix') format('embedded-opentype'),
-        url('Jaquel-Heavy.woff2') format('woff2'),
-        url('Jaquel-Heavy.woff') format('woff'),
-        url('Jaquel-Heavy.ttf') format('truetype'),
-        url('Jaquel-Heavy.svg#Jaquel-Heavy') format('svg');
-    font-weight: 900;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Jaquel';
-    src: url('Jaquel-Italic.eot');
-    src: url('Jaquel-Italic.eot?#iefix') format('embedded-opentype'),
-        url('Jaquel-Italic.woff2') format('woff2'),
-        url('Jaquel-Italic.woff') format('woff'),
-        url('Jaquel-Italic.ttf') format('truetype'),
-        url('Jaquel-Italic.svg#Jaquel-Italic') format('svg');
-    font-weight: normal;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Jaquel';
-    src: url('Jaquel-LightItalic.eot');
-    src: url('Jaquel-LightItalic.eot?#iefix') format('embedded-opentype'),
-        url('Jaquel-LightItalic.woff2') format('woff2'),
-        url('Jaquel-LightItalic.woff') format('woff'),
-        url('Jaquel-LightItalic.ttf') format('truetype'),
-        url('Jaquel-LightItalic.svg#Jaquel-LightItalic') format('svg');
-    font-weight: 300;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Jaquel';
-    src: url('Jaquel-Bold.eot');
-    src: url('Jaquel-Bold.eot?#iefix') format('embedded-opentype'),
-        url('Jaquel-Bold.woff2') format('woff2'),
-        url('Jaquel-Bold.woff') format('woff'),
-        url('Jaquel-Bold.ttf') format('truetype'),
-        url('Jaquel-Bold.svg#Jaquel-Bold') format('svg');
+    src: url('Jaquel-Bold.woff2') format('woff2'),
+         url('Jaquel-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
-:root {
-    --orangered: #ff5719;
-}
+/*Containments*/
 
 body{
-    background-color: #191919; text-transform: uppercase;
+    background-color: #191919; 
+    text-transform: uppercase;
+    margin: 0; padding: 0;
 }
-
-.container{
-    max-width: 100%; 
+:root {
+    --orangered: #ff5719;
 }
 div{
     display: inline-block;
 }
-div.right-hand{
-    margin-top: 15em;
-    position: relative; right: 4.7em;
+.section{
+    width: 100%; height: 100vh; position: relative;
+    background-size: cover; background-position: center;
 }
-.col-md-5{
-    width: 35%;
-}
-.col-md-6{
-    width: 45%;
+footer{
+    position: absolute; width: 100%; 
+    height: 143px; bottom: 0;
 }
 
-.title{
-    margin-top: 5em;
+/*Text*/
+.topic{
+    letter-spacing: 5px !important;
 }
 
 h1{
     font-family: 'Jaquel'; font-weight: 900;
-    font-style: normal; font-size: 80px; 
-    color: white; letter-spacing: 10px;
+    font-style: normal; font-size: 70px; 
+    color: #FFF; letter-spacing: 10px;
 }
 h2{
     font-family: 'Jaquel'; font-weight: 900;
-    font-style: normal; font-size: 40px; 
-    color: white; letter-spacing: 2px;
+    font-style: normal; font-size: 35px; 
+    color: #FFF; letter-spacing: 2px;
 }
-p{
-    font-family: 'Gotham Book'; font-weight: 500;
-    font-style: normal; font-size: 25px;
-    color: #9d9d9d; letter-spacing: 4px;
+h3{
+    font-family: 'Jaquel'; font-weight: 500;
+    font-style: normal; font-size: 25px; 
+    color: #FFF; letter-spacing: 1.5px;
 }
-p.subtitle{
-    margin-top: 0.8em;
-}
-div.right-hand>p.subtitle{
-    position: relative; right: 0.5em;
-}
-div.introduction{
-    position: absolute; left: 0; right: 8%;
-    margin-left: auto; margin-right: auto;
-    bottom: 12%;
-}
-div.introduction>p{
-    color: white;
+h2.left-copyright{
+    position: relative; bottom: -30%; left: 4.3%;
+    font-size: 15px; font-weight: 200;
 }
 
-img{
-    cursor: pointer;
+p{
+    font-family: 'Gotham Book'; font-weight: 500;
+    font-style: normal; font-size: 20px;
+    color: #FFF; letter-spacing: 4px;
 }
-.section{
-    width: 100%; height: 100vh; position: relative;
-    background-size: cover; background-position: center;
+p.subtitle{
+    margin-top: 0.8em; color: #9D9D9D !important;
+}
+p.right-hand{
+    margin-right: 0.7em;
+}
+
+a.next-page{
+    color: #FFF; font-size: 18px;
+    text-decoration: none; font-family: 'Gotham Book';
+    font-weight: 500; font-style: normal;
+    letter-spacing: 2px;
+}
+
+div.introduction{
+    position: absolute; left: 0; right: 5%;
+    margin-left: auto; margin-right: auto;
+    bottom: 15%; width: 40%;
+}
+div.introduction>p{
+    color: #FFF;
+}
+div.introduction-2{
+    width: 92%; position: relative; left: 1%;
+}
+div.introduction-3{
+    width: 28%; float: right;
+    position: relative; right: 10%;
+}
+div.left-keyboard{
+    position: absolute; left: 0; bottom: 5%;
+}
+div.left-keyboard img{
+    width: 57%; transform: translateX(-20%);
+}
+
+/*Image*/
+img{
+    cursor: pointer; z-index: 2;
 }
 .logo{
     width: 150px; position: absolute;
     top: 35px; left: 60px;
 }
 
+/*Video*/
+
+.video-container{
+    position: absolute; top: 0; left: 0;
+}
+
+video{
+    object-fit: cover; 
+}
+
+.content{
+    z-index: 5; width: 100%;
+}
+
+/*Navbar, List*/
+
 .navbar-light .navbar-nav .nav-item{
     margin-right: 4em; margin-top: 2.5em;
 }
 .navbar-light .navbar-nav .nav-link{
-    color: white; text-align: center;
+    color: #FFF; text-align: center;
     text-transform: uppercase; 
     font-size: 20px; letter-spacing: 5px;
     font-family: 'Jaquel'; font-weight: normal;
 }
 .navbar-light .navbar-nav .nav-link:hover{
     color: 	#D0D0D0 !important;
-}
-.navbar-light .navbar-nav .nav-link:focus{
-    color: white !important;
 }
 .navbar-light .navbar-nav .normal::after{
     content: ""; position: relative; display: block;
@@ -199,7 +158,6 @@ img{
 .navbar-light .navbar-nav .normal:hover::after{
     width: 100%; 
 }
-
 .navbar-light .navbar-nav .active a{
     color: #ff5719 !important; text-decoration: none;
 }
@@ -214,10 +172,33 @@ img{
     bottom: -0.5em; left: -0.1em
 }
 
+ul.outside{
+    font-size: 25px; font-family: 'Jaquel';
+    font-weight: normal; font-style: normal;
+    letter-spacing: 3px; color: #FFF;
+    list-style: none; margin-bottom: 1em;
+}
+
+ul.inside{
+    font-size: 20px; font-family: 'Gotham Book';
+    font-weight: 500; font-style: normal;
+    color: #FFF; list-style: none; 
+    margin-top: 1em;
+}
+ul.inside li{
+    margin-top: -0.85em;
+}
+ul.inside span{
+    color: #ff5719; font-size: 35px;
+    position: relative; right: 0.6em;
+    top: 0.1em
+}
+
+/*Arrow*/
+
 .arrow{
-    position: relative; 
-    top: 1.7em !important; right: 0.5em !important;
-    z-index: 20; width: 40px; cursor: pointer;
+    position: relative; top: 1.7em; right: 0.5em;
+    z-index: 20; width: 30px; cursor: pointer;
     animation:loop 2s infinite;
     -webkit-animation:loop 2s infinite;
     -moz-animation:loop 2s infinite;
@@ -234,6 +215,145 @@ img{
     }
 }
 
-@media only screen and (max-height:510px) and (orientation: landscape){
+/*Circle Layout*/
+.circle{
+    width: 650px; height: 650px;
+    background: #ff5719;
+    border-radius: 50%; position: absolute;
+    top: 25%; transform: translateX(-50%);
+}
+.circle .title{
+    width: inherit; 
+    position: relative; left: 19.5%; top:32.5%
+}
+.circle .title h2{
+    font-size: 68px; letter-spacing: 12px;
+    text-align: center; transform: rotate(270deg);
+}
 
+.circle-2{
+    width: 650px; height: 650px;
+    background: #ff5719;
+    border-radius: 50%; position: absolute;
+    top: 5.5%; right: 0; transform: translateX(45%);
+}
+.circle-2 .title{
+    width: inherit; position: relative; 
+    left: -15%; top:38%
+}
+.circle-2 .title h2{
+    font-size: 46px; letter-spacing: 12px;
+    text-align: center; transform: rotate(90deg);
+}
+
+/*Rectangle Layout*/
+.rectangle{
+    background: #ff5719; position: absolute;
+    transform: rotate(270deg) translateX(-5%) translateY(-112%);
+}
+.rectangle .title{
+    padding: 2em; padding-left: 6.5em !important;
+}
+.rectangle .title h2{
+    font-size: 46px; letter-spacing: 5px;
+}
+
+/*Circular Banner*/
+.circular-banner img{
+    width: 180px; animation: circularBanner 12s linear infinite;
+}
+.circular-banner img:hover{
+    animation-play-state: paused;
+}
+@keyframes circularBanner {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/*Form*/
+form{
+    width: 85%;
+}
+input, select{
+    border: 2px solid #6C6C6C; outline: none; box-shadow: none;
+    font-size: 18px; font-family: 'Gotham Book';
+    font-weight: 500; font-style: normal;
+    letter-spacing: 1px; text-transform: uppercase;
+    padding: 0.25em 0.32em; color: #6C6C6C;
+}
+select{
+    padding: 0.42em 0.15em !important;
+}
+.user-form{
+    position: relative; min-height: 100vh;
+    display: flex; justify-content: center;
+    align-items: center; margin-top: 2.25em;
+} 
+.user-form .user-form-area{
+    position: relative; background:rgba(252, 252, 252, .7);
+    width: 1000px; height: 550px;
+}
+.user-form .user-form-area .user{
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%; 
+    display: flex;
+}
+.user-form .user-form-area .user .user-form-image{
+    position: relative; width: 50%; height: 100%;
+}
+.user-form .user-form-area .user .user-form-image img{
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%; object-fit: cover;
+}
+.user-form .user-form-area .user .filling{
+    position: relative; width: 50%; height: 100%;
+    display: flex; justify-content: center;
+    align-items: center;
+}
+.user-form .user-form-area .user .filling .name,
+.user-form .user-form-area .user .filling .email,
+.user-form .user-form-area .user .filling .phone-number,
+.user-form .user-form-area .user .filling .submit{
+    width: 100%; margin-bottom: 1em;
+}
+.user-form .user-form-area .user .filling .budget{
+    position: absolute; right: 0;
+}
+.user-form .user-form-area .user .filling .name input,
+.user-form .user-form-area .user .filling .email input,
+.user-form .user-form-area .user .filling .phone-number input{
+    width: 100%; 
+}
+.user-form .user-form-area .user .filling 
+.subject-and-budget .budget input{
+    width: 84%; 
+}
+.user-form .user-form-area .user .filling .submit input{
+    width: 40%; margin-top: 1em; 
+    font-size: 25px; letter-spacing: 4px;
+    padding: 0.25em; border: 2px solid #191919;
+    background: none; color: #000;
+} 
+.user-form h2{
+    font-size: 30px; font-family: 'Gotham Book';
+    font-weight: 500; font-style: normal;
+    letter-spacing: 2px; text-align: center;
+    color: #000;
+}
+.user-form .user-form-area .user .user-form-image 
+.words-inside-image{
+    width: 50%; position: absolute; 
+    bottom: 1em; left: 2em; 
+}
+.user-form .user-form-area .user .user-form-image 
+.words-inside-image h2{
+    position: relative; z-index: 10; 
+    color: #FFF; font-size: 45px;
+    text-align: left; letter-spacing: 2px;
+    line-height: 1.4;
+}
+.user-form p{
+    color: #000; font-size: 20px; margin-left: 0.5em;
+    letter-spacing: 1px; margin-bottom: 0.3em;
 }
